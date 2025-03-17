@@ -1,0 +1,90 @@
+:root{
+    --primary-color: #90ee90;
+    --bg : #0e100f;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    place-items: center;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg);
+    color: rgb(255, 255, 255);
+    min-height: 100vh;
+}
+.left, .right {
+    flex: 1;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.center {
+    flex: 2;
+    background-color:rgb(33, 37, 33);
+    padding: 20px;
+    min-height: 100vh;
+    display: flex; 
+
+    margin-top: 120px;
+}
+
+.center h1 {
+    font-size: 2rem;
+    padding-top: 10px; /* Atur jarak dari atas */
+    text-align: left;
+}
+ 
+.center img{
+    width: 30%;
+    padding-top: 60px;
+    height: 30%;
+    object-fit: cover;
+    border-radius: 5px;
+    position: relative;
+    left: 50px; /* Geser ke kanan */
+    top: 20px; /* Geser ke bawah */
+
+}
+
+
+
+.head1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;  
+    background-color:rgb(33, 37, 33);
+    border-bottom: 3cap solid rgb(0, 0, 0);
+    position: fixed;
+    top : 0;
+    left: 0;
+    right: 0;
+z-index: 1000;
+}
+
+.navlogo{
+    font-size: 2rem;
+    font-weight: 600;
+    align-items: center;
+    color: #ffff;
+font-style: italic;
+}
+
+.navlogo span{
+    color: rgb(65, 140, 86);
+}
+.nav-link a{
+    color: #ffff;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+}
