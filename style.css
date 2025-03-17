@@ -55,8 +55,6 @@ body{
 
 }
 
-
-
 .head1{
     display: flex;
     justify-content: space-between;
@@ -88,3 +86,16 @@ font-style: italic;
     font-size: 1.2rem;
     margin: 0 1rem;
 }
+
+.navlogin { font-size: 2rem;
+    font-weight: 600;
+    align-items: center;
+    color: #ffff;
+font-style: italic;
+}
+ .navlogin a{
+    color: #ffff;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+ }
