@@ -22,8 +22,8 @@ body{
     font-family: "Poppins", sans-serif;
     background-color: var(--bg);
     color: rgb(255, 255, 255);
- align-items: center;
- justify-content: center;
+    align-items: center;
+    justify-content: center;
     min-height: 100vh;
 }
 .left, .right {
@@ -73,7 +73,7 @@ body{
     top : 0;
     left: 0;
     right: 0;
-z-index: 1000;
+    z-index: 1000;
 }
 
 .navlogo{
@@ -81,7 +81,7 @@ z-index: 1000;
     font-weight: 600;
     align-items: center;
     color: #ffff;
-font-style: italic;
+    font-style: italic;
 }
 
 .navlogo span{
@@ -99,7 +99,7 @@ font-style: italic;
     font-weight: 600;
     align-items: center;
     color: #ffff;
-font-style: italic;
+    font-style: italic;
 }
  .navlogin a{
     color: #ffff;
@@ -121,7 +121,12 @@ font-style: italic;
 
 .centered {
     text-align: center; 
-    vertical-align: middle; }
+    vertical-align: middle; 
+    }
+.centered img {
+    margin-bottom: -80px; /* Menambahkan jarak di bawah gambar */
+}
+
 
 .loging {
     width: 100%;
