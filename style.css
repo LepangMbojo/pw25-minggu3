@@ -1,6 +1,10 @@
 :root{
     --primary-color: #90ee90;
-    --bg : #0e100f;
+    --bg: #0e100f;
+    --text-color: #ffffff;
+    --input-bg: #1c1e1d;
+    --input-border: #3a3d3b;
+    --button-bg: #4caf50;
 }
 
 *{
@@ -18,29 +22,32 @@ body{
     font-family: "Poppins", sans-serif;
     background-color: var(--bg);
     color: rgb(255, 255, 255);
+ align-items: center;
+ justify-content: center;
     min-height: 100vh;
 }
 .left, .right {
-    flex: 1;
-    background-color: rgb(0, 0, 0);
+    flex: 0.5;
     padding: 20px;
-    min-height: 100vh;
 }
 
 .center {
-    flex: 2;
-    background-color:rgb(33, 37, 33);
+    flex: 3;
+    background-color: rgb(33, 37, 33);
     padding: 20px;
     min-height: 100vh;
-    display: flex; 
-
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
     margin-top: 120px;
+    justify-content: center;
 }
 
 .center h1 {
     font-size: 2rem;
-    padding-top: 10px; /* Atur jarak dari atas */
-    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    margin-left: 0px;
 }
  
 .center img{
@@ -50,9 +57,9 @@ body{
     object-fit: cover;
     border-radius: 5px;
     position: relative;
-    left: 50px; /* Geser ke kanan */
-    top: 20px; /* Geser ke bawah */
-
+    display: block;
+    margin: 0 auto; 
+    padding-bottom: 90px;
 }
 
 .head1{
@@ -61,7 +68,7 @@ body{
     align-items: center;
     padding: 1rem 7%;  
     background-color:rgb(33, 37, 33);
-    border-bottom: 3cap solid rgb(0, 0, 0);
+    border-bottom: 3cap solid rgb(14, 16, 15);
     position: fixed;
     top : 0;
     left: 0;
@@ -87,7 +94,8 @@ font-style: italic;
     margin: 0 1rem;
 }
 
-.navlogin { font-size: 2rem;
+.navlogin { 
+    font-size: 1.5 rem;
     font-weight: 600;
     align-items: center;
     color: #ffff;
@@ -99,3 +107,58 @@ font-style: italic;
     font-size: 1.2rem;
     margin: 0 1rem;
  }
+
+
+ h2 {
+    font-size: 1.5rem;
+    padding-top: 120px;
+    text-align: center;
+    width: 50%;
+    margin-left: auto;  
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+
+.centered {
+    text-align: center; 
+    vertical-align: middle; }
+
+.loging {
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--input-bg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loging label {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.loging input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: var(--input-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+    color: var(--text-color);
+}
+
+.loging button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--button-bg);
+    border-radius: 5px;
+    color: var(--text-color);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
